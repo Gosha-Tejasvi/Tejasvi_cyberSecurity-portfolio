@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejasvi | Cyber Security Portfolio</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    html {scroll-behavior:smooth;}
+    body {
+      background:linear-gradient(135deg,#0f172a,#1e293b);
+      color:#f8fafc;
+      overflow-x:hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      position:fixed;
+      top:0;
+      width:100%;
+      background:rgba(15,23,42,0.9);
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      padding:15px 0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(56,189,248,0.2);
+      backdrop-filter:blur(6px);
+    }
+
+    nav a {
+      color:#38bdf8;
+      text-decoration:none;
+      font-weight:500;
+      transition:color 0.3s,transform 0.3s;
+    }
+
+    nav a:hover {
+      color:#f8fafc;
+      transform:scale(1.1);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      text-align:center;
+      padding:120px 20px 60px;
+      position:relative;
+    }
+
+    header::after {
+      content:"";
+      position:absolute;
+      bottom:15px;
+      left:50%;
+      transform:translateX(-50%);
+      width:120px;
+      height:4px;
+      background:#38bdf8;
+      border-radius:10px;
+    }
+
+    .logo-container {
+      display:inline-block;
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      border:5px solid #38bdf8;
+      box-shadow:0 0 25px #38bdf8;
+      overflow:hidden;
+      margin-bottom:25px;
+      position:relative;
+    }
+
+    .logo-container img {
+      width:100%;
+      height:100%;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    /* ===== RESUME BUTTON ===== */
+    .resume-btn {
+      position:absolute;
+      top:70px;
+      
+      right:90%;
+      
+      transform:translateX(150px);
+      background:#38bdf8;
+      color:#0f172a;
+      padding:10px 20px;
+      border:none;
+      border-radius:30px;
+      font-weight:600;
+      cursor:pointer;
+      transition:all 0.3s;
+      text-decoration:none;
+    }
+
+    .resume-btn:hover {
+      background:#f8fafc;
+      color:#0f172a;
+      transform:translateX(150px) scale(1.05);
+    }
+
+    header h1 {font-size:3rem;color:#38bdf8;}
+    header p {font-size:1.2rem;color:#94a3b8;margin-top:10px;}
+
+    .typing-container {
+      margin-top:15px;
+      font-size:1.5rem;
+      color:#f1f5f9;
+      height:30px;
+      font-weight:400;
+    }
+
+    section {text-align:center;padding:80px 20px;}
+    h2 {color:#38bdf8;font-size:2rem;margin-bottom:25px;}
+
+    .internships, .projects-container, .skills-container, .certifications-container, .achievements-container {
+      display:flex;justify-content:center;flex-wrap:wrap;gap:30px;
+    }
+
+    .card, .project-card, .skill-card, .cert-card, .ach-card {
+      background:rgba(255,255,255,0.05);
+      border-radius:15px;
+      padding:20px;
+      width:300px;
+      transition:transform 0.3s,box-shadow 0.3s;
+    }
+
+    .card:hover, .project-card:hover, .skill-card:hover, .cert-card:hover, .ach-card:hover {
+      transform:translateY(-10px);
+      box-shadow:0 0 15px rgba(56,189,248,0.3);
+    }
+
+    .project-card img {
+      width:100%;border-radius:10px;margin-bottom:15px;
+    }
+
+    .project-card h3, .skill-card h3, .cert-card h3, .ach-card h3 {
+      color:#38bdf8;margin-bottom:10px;
+    }
+
+    footer {
+      text-align:center;
+      padding:60px 20px;
+      background:#0f172a;
+      border-top:2px solid #38bdf8;
+    }
+
+    .connect-icons {
+      display:flex;justify-content:center;gap:40px;margin-top:20px;
+    }
+
+    .connect-icons a {
+      color:#38bdf8;font-size:2.3rem;transition:color 0.3s,transform 0.3s;
+    }
+
+    .connect-icons a:hover {
+      color:#f1f5f9;
+      transform:scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#internships">Internships</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Connect</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="about">
+    <div class="logo-container">
+      <img src="assets/logo.gif" alt="Animated Logo">
+    </div>
+  
+<a href="assets/Tejasvi_Resume.pdf" target="_blank" class="resume-btn">Resume</a>
+
+
+
+    <h1>Hello! I'm Tejasvi</h1>
+    <p>Aspiring Cyber Security Engineer</p>
+    <div class="typing-container" id="typing"></div>
+  </header>
+
+  <!-- INTERNSHIPS -->
+  <section id="internships">
+    <h2>Internships</h2>
+    <div class="internships">
+      <div class="card">
+        <h3>Datail Technologies Private limited</h3>
+        <p> Worked on NLP based task , webscraping , used ML models to identify the patterns and stored data in
+ PostgreSQL database.</p>
+      </div>
+      <div class="card">
+        <h3>Hewlett Packard Enterprise (HPE)</h3>
+        <p> Developed security observability intelligence solution.
+ Implemented Kubernetes-based runtime enforcement using Tetragon.
+ Enhanced security observability with minimal overhead.</p>
+      </div>
+      <div class="card">
+        <h3>The Sparks Foundation</h3>
+        <p> Predicted student scores using Simple Linear Regression .
+ Conducted data analysis and visualization using Python libraries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="assets/student_record.jpg" alt="Student Record Management System">
+        <h3>Student Record Management System</h3>
+        <p>Developed in C with Admin/User modules. Admins manage records and view attendance logs, while users log in securely to record login/logout times.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/virtual_fitness.jpg" alt="AI-Based Virtual Fitness Coach">
+        <h3>AI-Based Virtual Fitness Coach</h3>
+        <p>Using MediaPipe and OpenCV, detects user posture and evaluates correctness of workouts in real time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card"><h3>Programming</h3><p>Python, Java, C</p></div>
+      <div class="skill-card"><h3>Database</h3><p>MySQL</p></div>
+      <div class="skill-card"><h3>Cybersecurity</h3><p>VAPT, Ethical Hacking, ISMS Audit Basics</p></div>
+      <div class="skill-card"><h3>Cloud</h3><p>AWS (Basics)</p></div>
+      <div class="skill-card"><h3>Soft Skills</h3><p>Teamwork, Communication, Adaptability</p></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+          
+    <div class="certifications-container">
+        <div class="cert-card"><h3>Google</h3><p>Cyber Security Professional Certificate</p></div>
+              <div class="cert-card"><h3>Google</h3><p>IT Automation with Python Professional Certificate</p></div>
+                   
+      <div class="cert-card"><h3>NPTEL</h3><p>Python for Data Science</p></div>
+      <div class="cert-card"><h3>NPTEL</h3><p>Programming in Java</p></div>
+
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievements-container">
+      <div class="ach-card"><h3>Smart India Hackathon 2024</h3><p>Selected at college level for innovative project proposal.</p></div>
+      <div class="ach-card"><h3>Poster Presentation Winner</h3><p>Won poster competitions showcasing AI and cybersecurity innovations.</p></div>
+      <div class="ach-card"><h3>Innovative Engineers Award</h3><p>Received from College of Engineering, 2022.</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact">
+    <h2>Connect with Me</h2>
+    <div class="connect-icons">
+      <a href="mailto:tejasvigosha@gmail.com" title="Email Me"><i class="fa-solid fa-envelope"></i></a>
+      
+      <a href="https://www.linkedin.com/in/tejasvi-gosha/" target="_blank" title="LinkedIn Profile">
+    <i class="fa-brands fa-linkedin"></i>
+</a>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    const texts = [
+      "Aspiring Cyber Security Enthusiast",
+      "Learning VAPT & Ethical Hacking",
+      "Exploring Cloud & Network Security"
+    ];
+    let index = 0, charIndex = 0;
+    const typingElement = document.getElementById("typing");
+
+    function type() {
+      if (charIndex < texts[index].length) {
+        typingElement.textContent += texts[index].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 100);
+      } else {
+        setTimeout(erase, 1500);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typingElement.textContent = texts[index].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 50);
+      } else {
+        index = (index + 1) % texts.length;
+        setTimeout(type, 500);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", type);
+  </script>
+
+</body>
+</html>
